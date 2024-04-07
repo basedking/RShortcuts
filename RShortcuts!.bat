@@ -67,7 +67,7 @@ set "RESULT=cd /d %~dp0!LF!start !exe_file!!selected_files!!LF!echo Victoria 2 i
 echo Enter the filename to save the result:
 set /p "filename="
 if not exist "mod/1_RShortcuts" mkdir "mod/1_RShortcuts"
-echo !RESULT! > mod/1_RShortcuts/%filename%.bat
+echo !RESULT! > "mod/1_RShortcuts/%filename%.bat"
 echo File "%filename%.bat" in folder mod/1_RShortcuts created with content: !RESULT!. !LF!Launch it to play.
 
 set /P "create_shortcut=Do you want to create a desktop link to the file? (Y/N): "
